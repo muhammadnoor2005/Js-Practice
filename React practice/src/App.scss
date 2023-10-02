@@ -1,0 +1,35 @@
+$div-color:blue;
+
+%message{
+    color: white;
+    background-color: black;
+    max-width: 20%
+};
+
+@mixin theme($theme:aqua){
+    background-color: $theme;
+    border:solid 1px gray;
+    border-radius: 5px;
+};
+
+.parentDiv{
+    background-color:gray;
+
+    .child{
+        color:$div-color
+    };
+
+    .functionTestingDiv{
+        @include theme;
+        @include theme($theme: DarkRed);
+    };
+
+    .messageDiv{
+        @extend %message;
+        font-size: 20px;
+    };
+};
+
+
+
+
