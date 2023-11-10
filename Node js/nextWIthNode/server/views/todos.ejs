@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <script src="/jsFiles/todos.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <% for(let item of todos){ %>
+            <li><input type="checkbox" name="checkBox" id="<%= item %>" onchange="deleteTod('<%= item %>')"><%= item.name %></li>
+        <% } %>
+    </div>
+</body>
+</html>
