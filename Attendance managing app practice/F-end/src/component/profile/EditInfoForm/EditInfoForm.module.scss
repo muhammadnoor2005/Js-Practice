@@ -1,0 +1,23 @@
+
+
+
+$labelColor:rgb(80, 80, 80);
+
+
+@mixin label{
+    color: $labelColor;
+    margin-bottom:4% ;
+}
+
+
+
+.editInfoForm{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    width: 25%;
+
+    label{
+        @include label;
+    }
+}

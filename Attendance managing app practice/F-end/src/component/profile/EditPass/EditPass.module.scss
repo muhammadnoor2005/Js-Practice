@@ -1,0 +1,64 @@
+//password old enter form
+$cancelButton:crimson;
+$verifyButton:rgb(255, 89, 0);
+$labelColor:rgb(80, 80, 80);
+
+
+@mixin label{
+    color: $labelColor;
+    margin-bottom:4% ;
+}
+
+
+.oldPassForm{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    width: 25%;
+
+    label{
+        @include label;
+    }
+}
+
+// both old pass and new pass dialog box has same button styling
+.verifyButton{
+    background-color: $verifyButton;   
+   }
+.cancelButton{
+    background-color: $cancelButton;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+}
+
+.dialogBoxHeadDiv{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+
+}
+
+
+
+//mew password enter form
+.newPassForm{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    width: 25%;
+
+    label{
+        @include label;
+    }
+}
+

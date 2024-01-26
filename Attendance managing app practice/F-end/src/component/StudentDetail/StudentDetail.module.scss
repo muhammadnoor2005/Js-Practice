@@ -1,0 +1,53 @@
+
+
+//"Students" heaidng on op of studentDetail page
+.studentPageHeader{
+    padding: 1% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 3vw;
+    color: rgb(49, 49, 49);
+}
+
+//div in which all the student divs resides
+.studentCollectionDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.studentDiv{
+    display: flex;
+    justify-content: space-between;
+    min-height: 4.5vw;
+    // max-height: 4.5vw;
+    width: 70%;
+    border: 1px solid rgb(186, 186, 186) ;
+    border-radius: 5px;
+    padding: 1.5% 2%;
+    margin-bottom: 1%;
+    background-color: rgb(250, 250, 250);
+
+    .studentNameAndEdit{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+
+    // img{
+        
+    // }
+}
+
+.crossButton{
+    position: relative;
+    z-index: 99999;
+    font-size: 20px;
+    span{
+        position: absolute;
+        top: -40px;
+    }
+}

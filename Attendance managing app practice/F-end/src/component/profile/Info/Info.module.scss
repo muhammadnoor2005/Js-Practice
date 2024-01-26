@@ -1,0 +1,78 @@
+@mixin profileHeading{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.imgDiv{
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+
+    position: relative;
+
+    //camera icon to edit img
+    .imageEditIcon{
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: rgb(210, 210, 210);
+        border-radius: 100%;
+        color: rgb(83, 83, 83);
+    }
+
+
+}
+
+//contian all profle info name pic
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button{
+        min-width: 100px;
+    }
+    
+}
+//profile heading along with backButton
+
+.profileHeadingWBackButton{
+   @include profileHeading;
+    padding-right: 20%;
+}
+
+//profile heading only with profile name
+.profileHeading{
+   @include profileHeading;
+}
+
+
+//all buttons change name change passs
+.buttonsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    button{
+        width: 100%;
+    }
+    .changeNameButton{
+        background-color:rgb(255, 89, 0);
+    }
+
+    .changePassButton{
+        background-color: crimson;
+    }
+}
+
+.fullName{
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+}
+
